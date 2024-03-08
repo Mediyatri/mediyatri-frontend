@@ -6,7 +6,6 @@ import App from "./App";
 import "./styles/index.css";
 import "./styles/tailwind.css";
 
-// amplify
 import {Amplify} from "aws-amplify";
 import awsconfig from "./aws-exports";
 Amplify.configure(awsconfig);
