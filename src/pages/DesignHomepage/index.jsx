@@ -15,7 +15,7 @@ import Header from "components/Header";
 
 import axios from 'axios';
 
-const backendUrl = 'http://mediyatri-dev-server-backend.eba-f2vbxjnd.ap-south-1.elasticbeanstalk.com';
+const backendUrl = 'https://mediyatri-dev-server-backend.eba-f2vbxjnd.ap-south-1.elasticbeanstalk.com';
 
 
 const DesignHomepagePage = () => {
