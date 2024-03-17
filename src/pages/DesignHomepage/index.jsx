@@ -358,7 +358,7 @@ const DesignHomepagePage = () => {
                 <DesignHomepagePricingcustom className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full"
                   makepackagetext="Craft your unique path to well-being with MediYatri Healthcare Concierge. Tailor your journey by handpicking the services you need – from hospital and doctor information to flight and visa arrangements, and hassle-free hotel bookings. Our dedicated customer service is at your service 24/7. Elevate your healthcare journey with MediYatri, because individualized well-being is our commitment to you."
                 />
-             </div>
+              </div>
             </div>
           </div>
           <div className="flex flex-col gap-10 items-center justify-center max-w-[1240px] mx-auto py-8 w-full">

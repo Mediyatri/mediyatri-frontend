@@ -100,7 +100,7 @@ const Header = (props) => {
                   </Text>
                 </Link>
                 {/* Language Dropdown Button */}
-                <div className="invisble relative" onClick={handleLangDropdownToggle}>
+                <div className="relative invisible" onClick={handleLangDropdownToggle}>
                   <Button
                     className="cursor-pointer flex items-center justify-center min-w-[102px]"
                   >
@@ -194,7 +194,7 @@ const Header = (props) => {
         </div>
         {/* Default Language Dropdown Button */}
         <div className="desktop-actions flex flex-row gap-4 items-center justify-start w-auto">
-          <div className="relative invisible" onClick={handleLangDropdownToggle}>
+          <div className="invisible relative" onClick={handleLangDropdownToggle}>
             <Button
               className="cursor-pointer flex items-center justify-center min-w-[102px]"
             >
