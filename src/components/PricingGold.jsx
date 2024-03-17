@@ -2,30 +2,28 @@ import React from "react";
 
 import { Button, Img, Text } from "components";
 
-const DesignHomepagePricinggold = (props) => {
+const DesignHomepagePricingsilver = (props) => {
   return (
     <>
       <div className={props.className}>
         <div className="flex flex-col gap-2 items-end justify-start w-full">
-          <div className="flex flex-col items-start justify-end w-auto">
-            <div className="bg-amber-A400_51 flex flex-row gap-2 items-center justify-start px-3 py-1.5 rounded w-auto">
-              <Img
-                className="h-5 w-5"
-                src="images/img_icontrending_lime_900_01.svg"
-                alt="icontrending"
-              />
-              <Text
-                className="text-center text-lime-900_01 text-xs w-auto"
-                size="txtPoppinsSemiBold12Lime90001"
-              >
-                {props?.populartext}
-              </Text>
-            </div>
+          <div className="bg-gray-400_33 flex flex-row gap-2 items-center justify-start px-3 py-1.5 rounded w-auto">
+            <Img
+              className="h-5 w-5"
+              alt="icontrending"
+              src={props?.trendingicon}
+            />
+            <Text
+              className="text-black-900 text-center text-xs w-auto"
+              size="txtPoppinsSemiBold12Black900"
+            >
+              {props?.populartext}
+            </Text>
           </div>
           <div className="flex flex-col gap-4 items-start justify-start w-full">
             <div className="flex flex-col gap-2 items-start justify-start w-full">
               <Text
-                className="text-4xl sm:text-[32px] md:text-[34px] text-gray-900 w-full"
+                className="text-4xl sm:text-[32px] md:text-[34px] text-gray-900 w-auto"
                 size="txtPoppinsExtraBold36"
               >
                 {props?.pricetext}
@@ -45,146 +43,129 @@ const DesignHomepagePricinggold = (props) => {
                 </Text>
               </div>
             </div>
-            <div className="flex flex-row gap-4 items-center justify-start w-full">
-              {!!props?.checkmark ? (
+            <div className="flex flex-row gap-2.5 items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-5">
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="amber_A400"
+                  color="blue_gray_400_01"
                   size="xs"
                   variant="fill"
                 >
-                  <Img alt="checkmark" src={props?.checkmark} />
+                  <Img src="images/img_checkmark.svg" alt="checkmark" />
                 </Button>
-              ) : null}
-              {!!props?.linktext1 ? (
-                <Text
-                  className="flex-1 text-gray-700 text-xs w-auto"
-                  size="txtPoppinsMedium12"
-                >
-                  {props?.linktext1}
-                </Text>
-              ) : null}
+              </div>
+              <Text
+                className="flex-1 text-gray-700 text-xs w-auto"
+                size="txtPoppinsMedium12"
+              >
+                {props?.hashtagtext}
+              </Text>
             </div>
-            <div className="flex flex-row gap-4 items-center justify-start w-full">
-              {!!props?.checkmarkOne ? (
+            <div className="flex flex-row gap-2.5 items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-5">
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="amber_A400"
+                  color="blue_gray_400_01"
                   size="xs"
                   variant="fill"
                 >
-                  <Img alt="checkmark_One" src={props?.checkmarkOne} />
+                  <Img src="images/img_checkmark.svg" alt="checkmark_One" />
                 </Button>
-              ) : null}
-              {!!props?.linktext2 ? (
-                <Text
-                  className="flex-1 text-gray-700 text-xs w-auto"
-                  size="txtPoppinsMedium12"
-                >
-                  {props?.linktext2}
-                </Text>
-              ) : null}
+              </div>
+              <Text
+                className="flex-1 text-gray-700 text-xs w-auto"
+                size="txtPoppinsMedium12"
+              >
+                {props?.hashtagtextOne}
+              </Text>
             </div>
-            <div className="flex flex-row gap-4 items-center justify-start w-full">
-              {!!props?.checkmarkTwo ? (
+            <div className="flex flex-row gap-2.5 items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-5">
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="amber_A400"
+                  color="blue_gray_400_01"
                   size="xs"
                   variant="fill"
                 >
-                  <Img alt="checkmark_Two" src={props?.checkmarkTwo} />
+                  <Img src="images/img_checkmark.svg" alt="checkmark_Two" />
                 </Button>
-              ) : null}
-              {!!props?.linktext3 ? (
-                <Text
-                  className="flex-1 text-gray-700 text-xs w-auto"
-                  size="txtPoppinsMedium12"
-                >
-                  {props?.linktext3}
-                </Text>
-              ) : null}
+              </div>
+              <Text
+                className="flex-1 text-gray-700 text-xs w-auto"
+                size="txtPoppinsMedium12"
+              >
+                {props?.hashtagtextTwo}
+              </Text>
             </div>
-            <div className="flex flex-row gap-4 items-center justify-start w-full">
-              {!!props?.checkmarkThree ? (
+            <div className="flex flex-row gap-2.5 items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-5">
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="amber_A400"
+                  color="blue_gray_400_01"
                   size="xs"
                   variant="fill"
                 >
-                  <Img alt="checkmark_Three" src={props?.checkmarkThree} />
+                  <Img src="images/img_checkmark.svg" alt="checkmark_Three" />
                 </Button>
-              ) : null}
-              {!!props?.linktext4 ? (
-                <Text
-                  className="flex-1 text-gray-700 text-xs w-auto"
-                  size="txtPoppinsMedium12"
-                >
-                  {props?.linktext4}
-                </Text>
-              ) : null}
+              </div>
+              <Text
+                className="flex-1 text-gray-700 text-xs w-auto"
+                size="txtPoppinsMedium12"
+              >
+                {props?.hashtagtextThree}
+              </Text>
             </div>
-            <div className="flex flex-row gap-4 items-center justify-start w-full">
-              {!!props?.checkmarkFour ? (
+            <div className="flex flex-row gap-2.5 items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-5">
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="amber_A400"
+                  color="blue_gray_400_01"
                   size="xs"
                   variant="fill"
                 >
-                  <Img alt="checkmark_Four" src={props?.checkmarkFour} />
+                  <Img src="images/img_checkmark.svg" alt="checkmark_Four" />
                 </Button>
-              ) : null}
-              {!!props?.linktext5 ? (
-                <Text
-                  className="flex-1 text-gray-700 text-xs w-auto"
-                  size="txtPoppinsMedium12"
-                >
-                  {props?.linktext5}
-                </Text>
-              ) : null}
+              </div>
+              <Text
+                className="flex-1 text-gray-700 text-xs w-auto"
+                size="txtPoppinsMedium12"
+              >
+                {props?.hashtagtextFour}
+              </Text>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 items-start justify-start w-auto">
-          <div className="flex flex-col items-start justify-end w-auto">
-            <Button
-              className="!text-lime-900_01 cursor-pointer font-poppins font-semibold leading-[normal] min-w-[79px] rounded text-center text-xs"
-              color="amber_A400_51"
-              size="xs"
-              variant="fill"
-            >
-              {props?.popularbutton}
-            </Button>
-          </div>
-          <Button
-            className="!text-gray-900 cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
-            shape="round"
-            color="amber_A400"
-            size="sm"
-            variant="fill"
-          >
-            {props?.chooseplanbutton}
-          </Button>
-        </div>
+        {/* <Button
+          className="!text-gray-700 border-2 border-gray-700 border-solid cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
+          shape="round"
+          color="white_A700"
+          size="sm"
+          variant="fill"
+        >
+          {props?.chooseplanbutton}
+        </Button> */}
       </div>
     </>
   );
 };
 
-DesignHomepagePricinggold.defaultProps = {
-  populartext: "3K+ users bought this",
-  pricetext: "$150",
+DesignHomepagePricingsilver.defaultProps = {
+  trendingicon: "images/img_icontrending_black_900.svg",
+  populartext: "300+ users bought this",
+  pricetext: "3,500 INR",
   basetext: "Gold",
-  descriptiontext: "Premium Healthcare Concierge",
-  popularbutton: "POPULAR",
+  descriptiontext: "Enhanced Healthcare Experience",
+  hashtagtext: "Detailed Hospital Profiles",
+  hashtagtextOne: "Premium Travel Assistance",
+  hashtagtextTwo: "Visa Concierge Service",
+  hashtagtextThree: "Premium Accommodations",
+  hashtagtextFour: "Dedicated Customer Support",
   chooseplanbutton: "Choose Plan",
 };
 
-export default DesignHomepagePricinggold;
+export default DesignHomepagePricingsilver;
