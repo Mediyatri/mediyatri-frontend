@@ -7,10 +7,10 @@ import DesignHomepageFooterwhite from "components/HomePageFooter";
 import DesignHomepageHomepagesignup from "components/HomePageSignup";
 import DesignHomepageHospitalcard from "components/HospitalCard";
 import DesignHomepageOnboardedcard from "components/OnboardedCard";
-import DesignHomepagePricingbronze from "components/PricingBronze";
+import DesignHomepagePricingbronze from "components/PricingSilver";
 import DesignHomepagePricingcustom from "components/PricingCustom";
-import DesignHomepagePricinggold from "components/PricingGold";
-import DesignHomepagePricingsilver from "components/PricingSilver";
+import DesignHomepagePricinggold from "components/PricingPlatinum";
+import DesignHomepagePricingsilver from "components/PricingGold";
 import Header from "components/Header";
 
 import axios from 'axios';
@@ -148,7 +148,7 @@ const DesignHomepagePage = () => {
                       className="text-base text-light_blue-900 w-auto"
                       size="txtPoppinsBold16"
                     >
-                      Watch MediYatri Demo
+                      How does it work?
                     </Text>
                   </div>
                 </div>
@@ -355,7 +355,9 @@ const DesignHomepagePage = () => {
                     linktext5="24/7 VIP Customer Concierge"
                   />
                 </List>
-                <DesignHomepagePricingcustom className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full" />
+                <DesignHomepagePricingcustom className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full"
+                  makepackagetext="Craft your unique path to well-being with MediYatri Healthcare Concierge. Tailor your journey by handpicking the services you need – from hospital and doctor information to flight and visa arrangements, and hassle-free hotel bookings. Our dedicated customer service is at your service 24/7. Elevate your healthcare journey with MediYatri, because individualized well-being is our commitment to you."
+                />
               </div>
             </div>
           </div>
@@ -425,7 +427,7 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    +91 9876543210
+                    +91 97319 50075
                   </Text>
                 </div>
                 <div className="flex flex-row gap-[17px] items-center justify-start w-auto">
@@ -438,7 +440,7 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    info@mediyatri.com
+                    contact@mediyatri.com
                   </Text>
                 </div>
               </div>

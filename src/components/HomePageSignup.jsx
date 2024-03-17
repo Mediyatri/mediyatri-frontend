@@ -33,7 +33,7 @@ const DesignHomepageHomepagesignup = (props) => {
     checkUser();
 
     // Cleanup function to remove event listener on component unmount
-    return () => Hub.removeListener('auth');
+    // return () => Hub.removeListener('auth');
   }, []);
 
   const handleSignInWithGoogle = () => {
@@ -249,7 +249,7 @@ const DesignHomepageHomepagesignup = (props) => {
 
 DesignHomepageHomepagesignup.defaultProps = {
   description:
-    "Tell us a bit about yourself, we’ll tell a lot about more about us.",
+    "Tell us a bit about yourself, we will tell you a lot about us.",
   fullname: "Full Name",
   phonenumber: "Phone Number",
   enterphonecolumn: "Enter your phone number",
