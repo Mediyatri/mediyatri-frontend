@@ -2,20 +2,20 @@ import React from "react";
 
 import { Button, Img, Text } from "components";
 
-const DesignHomepagePricingsilver = (props) => {
+const DesignHomepagePricingbronze = (props) => {
   return (
     <>
       <div className={props.className}>
         <div className="flex flex-col gap-2 items-end justify-start w-full">
-          <div className="bg-gray-400_33 flex flex-row gap-2 items-center justify-start px-3 py-1.5 rounded w-auto">
+          <div className="bg-deep_orange-50 flex flex-row gap-2 items-center justify-start px-3 py-1.5 rounded w-auto">
             <Img
               className="h-5 w-5"
+              src="images/img_icontrending.svg"
               alt="icontrending"
-              src={props?.trendingicon}
             />
             <Text
-              className="text-black-900 text-center text-xs w-auto"
-              size="txtPoppinsSemiBold12Black900"
+              className="text-center text-xs text-yellow-900 w-auto"
+              size="txtPoppinsSemiBold12"
             >
               {props?.populartext}
             </Text>
@@ -48,7 +48,7 @@ const DesignHomepagePricingsilver = (props) => {
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="blue_gray_400_01"
+                  color="deep_orange_300"
                   size="xs"
                   variant="fill"
                 >
@@ -67,7 +67,7 @@ const DesignHomepagePricingsilver = (props) => {
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="blue_gray_400_01"
+                  color="deep_orange_300"
                   size="xs"
                   variant="fill"
                 >
@@ -78,7 +78,7 @@ const DesignHomepagePricingsilver = (props) => {
                 className="flex-1 text-gray-700 text-xs w-auto"
                 size="txtPoppinsMedium12"
               >
-                {props?.hashtagtextOne}
+                {props?.hashtagtextone}
               </Text>
             </div>
             <div className="flex flex-row gap-2.5 items-start justify-start w-full">
@@ -86,7 +86,7 @@ const DesignHomepagePricingsilver = (props) => {
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="blue_gray_400_01"
+                  color="deep_orange_300"
                   size="xs"
                   variant="fill"
                 >
@@ -97,7 +97,7 @@ const DesignHomepagePricingsilver = (props) => {
                 className="flex-1 text-gray-700 text-xs w-auto"
                 size="txtPoppinsMedium12"
               >
-                {props?.hashtagtextTwo}
+                {props?.hashtagtexttwo}
               </Text>
             </div>
             <div className="flex flex-row gap-2.5 items-start justify-start w-full">
@@ -105,7 +105,7 @@ const DesignHomepagePricingsilver = (props) => {
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="blue_gray_400_01"
+                  color="deep_orange_300"
                   size="xs"
                   variant="fill"
                 >
@@ -116,7 +116,7 @@ const DesignHomepagePricingsilver = (props) => {
                 className="flex-1 text-gray-700 text-xs w-auto"
                 size="txtPoppinsMedium12"
               >
-                {props?.hashtagtextThree}
+                {props?.hashtagtextthree}
               </Text>
             </div>
             <div className="flex flex-row gap-2.5 items-start justify-start w-full">
@@ -124,7 +124,7 @@ const DesignHomepagePricingsilver = (props) => {
                 <Button
                   className="flex h-5 items-center justify-center w-5"
                   shape="circle"
-                  color="blue_gray_400_01"
+                  color="deep_orange_300"
                   size="xs"
                   variant="fill"
                 >
@@ -135,37 +135,41 @@ const DesignHomepagePricingsilver = (props) => {
                 className="flex-1 text-gray-700 text-xs w-auto"
                 size="txtPoppinsMedium12"
               >
-                {props?.hashtagtextFour}
+                {props?.hashtagtextfour}
               </Text>
             </div>
           </div>
         </div>
-        <Button
-          className="!text-gray-700 border-2 border-gray-700 border-solid cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
+        {/* <Button
+          className="!text-lime-900 border-2 border-lime-900 border-solid cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
           shape="round"
           color="white_A700"
           size="sm"
           variant="fill"
         >
-          {props?.chooseplanbutton}
-        </Button>
+          {props?.choosePlan}
+        </Button> */}
       </div>
     </>
   );
 };
 
-DesignHomepagePricingsilver.defaultProps = {
-  trendingicon: "images/img_icontrending_black_900.svg",
-  populartext: "2K+ users bought this",
-  pricetext: "$100",
+DesignHomepagePricingbronze.defaultProps = {
+  populartext: "1K+ users bought this",
+  pricetext: "2,000 INR",
   basetext: "Silver",
-  descriptiontext: "Enhanced Healthcare Experience",
-  hashtagtext: "Detailed Hospital Profiles",
-  hashtagtextOne: "Premium Travel Assistance",
-  hashtagtextTwo: "Visa Concierge Service",
-  hashtagtextThree: "Premium Accommodations",
-  hashtagtextFour: "Dedicated Customer Support",
-  chooseplanbutton: "Choose Plan",
+  descriptiontext: (
+    <>
+      Basic Healthcare <br />
+      Assistance
+    </>
+  ),
+  hashtagtext: "Hospital Lookup",
+  hashtagtextone: "Travel Assistance",
+  hashtagtexttwo: "Visa Information",
+  hashtagtextthree: "Basic Accommodation Suggestions",
+  hashtagtextfour: "24/7 Customer Support",
+  choosePlan: "Choose Plan",
 };
 
-export default DesignHomepagePricingsilver;
+export default DesignHomepagePricingbronze;

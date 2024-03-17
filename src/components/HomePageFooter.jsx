@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Img, Text } from "components";
+import { Link } from "react-router-dom";
 
 const DesignHomepageFooterwhite = (props) => {
   return (
@@ -19,47 +20,47 @@ const DesignHomepageFooterwhite = (props) => {
                 <div className="flex flex-col items-start justify-start w-auto">
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
-                      <Text
+                      <Link to="/"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text1}
-                      </Text>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
-                      <Text
+                      <Link to="/services"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text2}
-                      </Text>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
-                      <Text
+                      <Link to="/pricing"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text3}
-                      </Text>
+                      </Link>
                     </div>
                   </div>
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
-                      <Text
+                      <Link to="/getintouch"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text4}
-                      </Text>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-2 items-start justify-start w-auto">
+              {/* <div className="flex flex-col gap-2 items-start justify-start w-auto">
                 <Text
                   className="text-gray-900 text-sm w-auto"
                   size="txtPoppinsSemiBold14"
@@ -178,7 +179,7 @@ const DesignHomepageFooterwhite = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="flex flex-col gap-2 items-start justify-start w-[93px]">
                 <Text
                   className="text-gray-900 text-sm w-auto"

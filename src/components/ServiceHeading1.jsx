@@ -33,7 +33,7 @@ const DesignServicesHeadingbody1 = (props) => {
 };
 
 DesignServicesHeadingbody1.defaultProps = {
-  userimage: "images/img_rectangle15_360x505.png",
+  userimage: "images/img_image75.png",
   title: "Tailored Travel Solutions",
   description:
     "Travel with confidence as we provide comprehensive assistance in planning your journey. Our travel experts help you with visa processes, accommodation arrangements, and transportation, ensuring your focus remains on your health.",

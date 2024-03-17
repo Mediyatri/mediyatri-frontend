@@ -86,18 +86,21 @@ const DesignServicesPage = () => {
             <DesignServicesHeadingbody1 className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full" />
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
-              expertguidancetext="Forex"
-              descriptiontwotext="12/7 forex assistance in India."
+              expertguidancetext="Forex Support"
+              descriptiontwotext="Easy & Hassle-Free Forex Availability."
+              rectanglefifteenimage="images/img_image76.png"
             />
             <DesignServicesHeadingbody1
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               title="Food Arrangement"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              description="Your Favorite Food - Delivered"
+              userimage="images/img_image82.png"
             />
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               expertguidancetext="Medical Visa Letter"
-              descriptiontwotext="Medical Visa Letter generation in 24 hours."
+              descriptiontwotext="Your First Steps Towards Your Healthy Journey"
+              rectanglefifteenimage="images/img_image77.png"
             />
             <DesignServicesHeadingbody1
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
@@ -105,20 +108,21 @@ const DesignServicesPage = () => {
                 <Text className="leading-[31.00px] text-base text-gray-700">
                   <span className="text-gray-700 font-poppins text-left font-normal">
                     <>
-                      Free Airport Transfer Service. <br />
+                      Your Cab awaits at the Airport , On Time!
                     </>
                   </span>
-                  <span className="text-gray-700 font-poppins text-left text-xs font-normal">
+                  {/* <span className="text-gray-700 font-poppins text-left text-xs font-normal">
                     *Conditions Apply.{" "}
-                  </span>
+                  </span> */}
                 </Text>
               }
-              title="Airport Transfer Service*"
+              title="Airport Transfer Service"
+              userimage="images/img_image78.png"
             />
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               expertguidancetext="On demand Video Call with Doctors"
-              descriptiontwotext="Video Call with Doctors: Hassle free consultations with Top Doctors in India even before you travel."
+              descriptiontwotext="Top Indian Doctors available in your Country"
             />
             <DesignServicesHeadingbody1
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
@@ -129,26 +133,20 @@ const DesignServicesPage = () => {
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               expertguidancetext="Hospital Partnerships"
-              descriptiontwotext="Gain access to a network of top-notch hospitals and healthcare facilities in India. We have established strong partnerships to offer you a range of medical services, ensuring you receive the best care possible."
-              rectanglefifteenimage="images/img_rectangle15_360x469.png"
+              descriptiontwotext="We have 100+ Hospital Partners"
+              rectanglefifteenimage="images/img_image79.png"
             />
             <DesignServicesHeadingbody1
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               userimage="images/img_rectangle15_2.png"
               title="Comfortable Stays"
-              description="Enjoy peace of mind with our curated selection of accommodation options. Whether you prefer a hotel, serviced apartment, or recovery center, we ensure a comfortable and safe stay tailored to your needs."
+              description="Cheap, clean and spacious rooms for you."
             />
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
-              expertguidancetext="Transparent Pricing"
-              descriptiontwotext="At MediYatri, we believe in transparency. Our pricing is clear, with no hidden costs. We work to provide affordable healthcare solutions without compromising on quality."
-              rectanglefifteenimage="images/img_rectangle15_3.png"
-            />
-            <DesignServicesHeadingbody1
-              className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
-              userimage="images/img_rectangle15_4.png"
-              title="24/7 On Ground Support Guranteed."
-              description="Medical emergencies can happen at any time. Our dedicated support team is available around the clock to assist you, ensuring you always have someone to turn to in times of need."
+              expertguidancetext="24/7 On Ground Support Guranteed."
+              descriptiontwotext="We assist you when you need us on ground."
+              rectanglefifteenimage="images/img_image80.png"
             />
           </div>
         </div>

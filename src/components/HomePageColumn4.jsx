@@ -6,6 +6,7 @@ const DesignHomepageColumnFour = (props) => {
   return (
     <>
       <div className={props.className}>
+        <a href="https://api.whatsapp.com/send/?phone=919731950075&text&type=phone_number&app_absent=0">
         <div className="bg-green-A700 flex flex-row gap-2.5 items-center justify-start sm:px-5 px-6 py-4 rounded-bl-[50px] rounded-tl-[50px] shadow-bs1 w-auto">
           <div className="flex flex-col h-8 items-center justify-start w-8">
             <Img
@@ -23,6 +24,7 @@ const DesignHomepageColumnFour = (props) => {
             </Text>
           </div>
         </div>
+        </a>
       </div>
     </>
   );

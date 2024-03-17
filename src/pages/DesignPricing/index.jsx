@@ -2,13 +2,14 @@ import React, {useState} from "react";
 
 import { Button, CheckBox, Img, List, Text } from "components";
 import DesignHomepageColumnFour from "components/HomePageColumn4";
-import DesignHomepagePricingbronze from "components/PricingBronze";
+import DesignHomepagePricingbronze from "components/PricingSilver";
 import DesignHomepagePricingcustom from "components/PricingCustom";
-import DesignHomepagePricinggold from "components/PricingGold";
-import DesignHomepagePricingsilver from "components/PricingSilver";
+import DesignHomepagePricinggold from "components/PricingPlatinum";
+import DesignHomepagePricingsilver from "components/PricingGold";
 import DesignPricingFaq from "components/PricingFaq";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import { Link } from "react-router-dom";
 
 const DesignPricingPage = () => {
   const designPricingFaqPropList = [
@@ -76,7 +77,18 @@ const DesignPricingPage = () => {
                       trendingicon="images/img_icontrending_light_blue_900.svg"
                     />
                   </List>
-                  <DesignHomepagePricinggold className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between outline outline-[1px] outline-amber-A400 sm:px-5 px-6 py-8 rounded-[16px] shadow-bs4 w-full" />
+                  <DesignHomepagePricinggold className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between outline outline-[1px] outline-amber-A400 sm:px-5 px-6 py-8 rounded-[16px] shadow-bs4 w-full"
+                    checkmark="images/img_checkmark_gray_900.svg"
+                    linktext1="Premium Hospitals"
+                    checkmarkOne="images/img_checkmark_gray_900.svg"
+                    linktext2="Luxury Travel Services"
+                    checkmarkTwo="images/img_checkmark_gray_900.svg"
+                    linktext3="White-Glove Visa Service"
+                    checkmarkThree="images/img_checkmark_gray_900.svg"
+                    linktext4="Elite VIP Accommodation"
+                    checkmarkFour="images/img_checkmark_gray_900.svg"
+                    linktext5="24/7 VIP Customer Concierge"
+                  />
                   <DesignHomepagePricingcustom
                     className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-start sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full"
                     makepackagetext="Craft your unique path to well-being with MediYatri Healthcare Concierge. Tailor your journey by handpicking the services you need – from hospital and doctor information to flight and visa arrangements, and hassle-free hotel bookings. Our dedicated customer service is at your service 24/7. Elevate your healthcare journey with MediYatri, because individualized well-being is our commitment to you."
@@ -115,12 +127,12 @@ const DesignPricingPage = () => {
                   If you need further information,
                 </Text>
                 <div className="flex flex-col items-start justify-start py-3 w-auto">
-                  <Text
+                  <Link to="/getintouch"
                     className="text-light_blue-A700 text-right text-sm tracking-[0.30px] w-auto"
                     size="txtPoppinsRegular14"
                   >
                     please contact us.
-                  </Text>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -36,7 +36,7 @@ DesignServicesHeadingbody.defaultProps = {
   expertguidancetext: "Expert Guidance",
   descriptiontwotext:
     "Benefit from our team of experienced healthcare professionals who guide you through every step of your medical travel. From selecting the right hospital to coordinating appointments, we ensure a seamless experience.",
-  rectanglefifteenimage: "images/img_rectangle15.png",
+  rectanglefifteenimage: "images/img_image74.png",
 };
 
 export default DesignServicesHeadingbody;

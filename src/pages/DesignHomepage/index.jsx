@@ -7,10 +7,10 @@ import DesignHomepageFooterwhite from "components/HomePageFooter";
 import DesignHomepageHomepagesignup from "components/HomePageSignup";
 import DesignHomepageHospitalcard from "components/HospitalCard";
 import DesignHomepageOnboardedcard from "components/OnboardedCard";
-import DesignHomepagePricingbronze from "components/PricingBronze";
+import DesignHomepagePricingbronze from "components/PricingSilver";
 import DesignHomepagePricingcustom from "components/PricingCustom";
-import DesignHomepagePricinggold from "components/PricingGold";
-import DesignHomepagePricingsilver from "components/PricingSilver";
+import DesignHomepagePricinggold from "components/PricingPlatinum";
+import DesignHomepagePricingsilver from "components/PricingGold";
 import Header from "components/Header";
 
 import axios from 'axios';
@@ -148,7 +148,7 @@ const DesignHomepagePage = () => {
                       className="text-base text-light_blue-900 w-auto"
                       size="txtPoppinsBold16"
                     >
-                      Watch MediYatri Demo
+                      How does it work?
                     </Text>
                   </div>
                 </div>
@@ -355,8 +355,10 @@ const DesignHomepagePage = () => {
                     linktext5="24/7 VIP Customer Concierge"
                   />
                 </List>
-                <DesignHomepagePricingcustom className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full" />
-              </div>
+                <DesignHomepagePricingcustom className="bg-white-A700 flex flex-1 flex-col gap-6 h-full items-start justify-between sm:px-5 px-6 py-8 rounded-[16px] shadow-bs3 w-full"
+                  makepackagetext="Craft your unique path to well-being with MediYatri Healthcare Concierge. Tailor your journey by handpicking the services you need – from hospital and doctor information to flight and visa arrangements, and hassle-free hotel bookings. Our dedicated customer service is at your service 24/7. Elevate your healthcare journey with MediYatri, because individualized well-being is our commitment to you."
+                />
+             </div>
             </div>
           </div>
           <div className="flex flex-col gap-10 items-center justify-center max-w-[1240px] mx-auto py-8 w-full">
@@ -372,14 +374,38 @@ const DesignHomepagePage = () => {
               className="sm:flex-col flex-row gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center w-full"
               orientation="horizontal"
             >
-              {new Array(3).fill({}).map((props, index) => (
+              {/* {new Array(3).fill({}).map((props, index) => (
                 <React.Fragment key={`DesignHomepageColumnOne${index}`}>
                   <DesignHomepageColumnOne
                     className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
                     {...props}
                   />
                 </React.Fragment>
-              ))}
+              ))} */}
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="When Ammu got detected with cancer, MediYatri took care of our entire journey, from Chittagong to Chennai"
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Yasmin Farhan"
+                imageSrc="images/img_image71.png"
+              />
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="My 5-Year-old son Rubel was diagnosed with a major heart issue, MediYatri stood beside me as a strong friend in India. Thank you MediYatri!"
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Imran"
+                imageSrc="images/img_image72.png"
+              />
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="I was suffering from chronic urology issues from last 5 years. MediYatri helped me to book an online consultation with a top urologist from India. Never thought I can address my issues so easily at home in Bangladesh."
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Mohammed Nurul"
+                imageSrc="images/img_image73.png"
+              />
             </List>
           </div>
         </div>
@@ -425,7 +451,7 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    +91 9876543210
+                    +91 97319 50075
                   </Text>
                 </div>
                 <div className="flex flex-row gap-[17px] items-center justify-start w-auto">
@@ -438,7 +464,7 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    info@mediyatri.com
+                    contact@mediyatri.com
                   </Text>
                 </div>
               </div>
