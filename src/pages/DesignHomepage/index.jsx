@@ -374,14 +374,38 @@ const DesignHomepagePage = () => {
               className="sm:flex-col flex-row gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center w-full"
               orientation="horizontal"
             >
-              {new Array(3).fill({}).map((props, index) => (
+              {/* {new Array(3).fill({}).map((props, index) => (
                 <React.Fragment key={`DesignHomepageColumnOne${index}`}>
                   <DesignHomepageColumnOne
                     className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
                     {...props}
                   />
                 </React.Fragment>
-              ))}
+              ))} */}
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="When Ammu got detected with cancer, MediYatri took care of our entire journey, from Chittagong to Chennai"
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Yasmin Farhan"
+                imageSrc="images/img_image71.png"
+              />
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="My 5-Year-old son Rubel was diagnosed with a major heart issue, MediYatri stood beside me as a strong friend in India. Thank you MediYatri!"
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Imran"
+                imageSrc="images/img_image72.png"
+              />
+              <DesignHomepageColumnOne
+                className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
+                offerdescription="I was suffering from chronic urology issues from last 5 years. MediYatri helped me to book an online consultation with a top urologist from India. Never thought I can address my issues so easily at home in Bangladesh."
+                likescounter="750 Likes"
+                viewscounter="1290 Views"
+                username="Mohammed Nurul"
+                imageSrc="images/img_image73.png"
+              />
             </List>
           </div>
         </div>

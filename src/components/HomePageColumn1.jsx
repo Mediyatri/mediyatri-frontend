@@ -51,7 +51,7 @@ const DesignHomepageColumnOne = (props) => {
               <div className="flex flex-row gap-2 items-center justify-center w-auto">
                 <Img
                   className="h-[52px] md:h-auto rounded-[50%] w-[52px]"
-                  src="images/img_ellipse1.png"
+                  src={props?.imageSrc}
                   alt="ellipseOne"
                 />
                 <div className="flex flex-col gap-0.5 items-start justify-start w-auto">
@@ -80,10 +80,11 @@ const DesignHomepageColumnOne = (props) => {
 
 DesignHomepageColumnOne.defaultProps = {
   offerdescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in est consequat, pharetra ligula eu, pulvinar velit. Vestibulum dolor arcu, placerat vel turpis vitae, placerat hendrerit sapien. Duis id eleifend tellus. Vivamus lacinia ex id erat ornare ultrices. Vivamus malesuada turpis et diam facilisis varius.",
+    "When Ammu got detected with cancer, MediYatri took care of our entire journey, from Chittagong to Chennai",
   likescounter: "750 Likes",
   viewscounter: "1290 Views",
-  username: "Jane Doe",
+  username: "Yasmin Farhan",
+  imageSrc: "images/img_image66.png",
 };
 
 export default DesignHomepageColumnOne;
