@@ -171,4 +171,5 @@ DesignHomepagePricingbronze.defaultProps = {
   hashtagtextfour: "24/7 Customer Support",
   choosePlan: "Choose Plan",
 };
+
 export default DesignHomepagePricingbronze;

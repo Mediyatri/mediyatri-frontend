@@ -167,4 +167,5 @@ DesignHomepagePricingsilver.defaultProps = {
   hashtagtextFour: "Dedicated Customer Support",
   chooseplanbutton: "Choose Plan",
 };
+
 export default DesignHomepagePricingsilver;

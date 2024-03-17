@@ -249,7 +249,7 @@ const DesignHomepageHomepagesignup = (props) => {
 
 DesignHomepageHomepagesignup.defaultProps = {
   description:
-  "Tell us a bit about yourself, we will tell you a lot about us.",
+    "Tell us a bit about yourself, we will tell you a lot about us.",
   fullname: "Full Name",
   phonenumber: "Phone Number",
   enterphonecolumn: "Enter your phone number",

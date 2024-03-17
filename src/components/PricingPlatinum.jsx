@@ -187,4 +187,5 @@ DesignHomepagePricinggold.defaultProps = {
   popularbutton: "POPULAR",
   chooseplanbutton: "Choose Plan",
 };
+
 export default DesignHomepagePricinggold;
