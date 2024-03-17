@@ -87,7 +87,9 @@ const DesignServicesPage = () => {
             <DesignServicesHeadingbody
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
               expertguidancetext="Forex Support"
-              descriptiontwotext="12/7 forex assistance in India."
+              // descriptiontwotext="12/7 forex assistance in India."
+              rectanglefifteenimage="images/img_image76.png"
+              descriptiontwotext="Easy & Hassle-Free Forex Availability."
             />
             <DesignServicesHeadingbody1
               className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1240px] w-full"
