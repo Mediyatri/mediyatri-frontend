@@ -36,7 +36,7 @@ const DesignHomepagePage = () => {
 
     const [showMore, setShowMore] = useState(false);
 
-    const [cardsToShow, setCardsToShow] = useState(4);
+    const [cardsToShow, setCardsToShow] = useState(8);
 
     const handleSeeMoreClick = (e) => {
       setShowMore(!showMore);
