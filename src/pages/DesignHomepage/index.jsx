@@ -26,10 +26,10 @@ const DesignHomepagePage = () => {
       userimage: "images/img_image70.png",
       doctorsonboardedtext: "hospitals tied up",
     },
-    { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+" },
+    { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+", userimage: "images/out-1.png" },
     {
       doctorsonboardedcount: "3",
-      userimage: "images/img_image70.png",
+      userimage: "images/img_country.jpeg",
       doctorsonboardedtext: "countries",
     },
   ];
@@ -52,6 +52,18 @@ const DesignHomepagePage = () => {
       const [cities, setCities] = useState([]);
       const [selectedCity, setSelectedCity] = useState("");
       const [hospitals, setHospitals] = useState([]);
+
+      const hardcodedCities = []; // Hardcoded cities
+      // const hardcodedHospitals = ['Apollo', 'Fortis', 'Rainbow', 'Manipal', 'Sakra']; // Hardcoded hospitals
+      const hardcodedHospitals = [
+  { name: "Apollo", city: "City A", logo: "images/img_apollo.png" },
+  { name: "Fortis", city: "City B", logo: "images/img_fortis.gif" },
+  { name: "Rainbow", city: "City C", logo: "images/img_rainbow.webp" },
+  { name: "Manipal", city: "City C", logo: "images/img_manipal.jpg" },
+  { name: "Sakra", city: "City C", logo: "images/img_sakra.jpg" },
+  // Add more hospitals with their logos
+];
+
 
         useEffect(() => {
     // Fetch cities from the backend
@@ -173,7 +185,7 @@ const DesignHomepagePage = () => {
         </Text>
       </div>
 
-      <div className="flex flex-col gap-4 items-end justify-start w-auto md:w-full">
+      {/* <div className="flex flex-col gap-4 items-end justify-start w-auto md:w-full">
         <Button
           onClick={handleSelectCityClick}
           className="border border-blue_gray-400 border-solid cursor-pointer flex items-center justify-center min-w-[138px] rounded"
@@ -211,24 +223,80 @@ const DesignHomepagePage = () => {
               {city}
             </div>
           ))}
-        </div>
+        </div> */}
 
-        <div className="flex flex-col gap-2 items-start justify-end w-auto md:w-full">
-          <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
+       {/* <div className="flex flex-col gap-2 items-start justify-end w-auto md:w-full">
+          <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full"> */}
 
         {/* Map hospitals based on cardsToShow */}
-        {hospitals.slice(0, cardsToShow).map((hospitalName, index) => (
+        {/* {hospitals.slice(0, cardsToShow).map((hospitalName, index) => (
             <DesignHomepageHospitalcard
                 key={index}
                 hospitalName={hospitalName}
                 city={selectedCity}
                 className="bg-white-A700 flex flex-col gap-2.5 items-start justify-start px-5 py-6 rounded-lg shadow-bs2 w-full"
             />
-        ))}
+        ))} */}
 
+          {/* </div>
+        </div>
+      </div> */}
+
+          <div className="flex flex-col gap-4 items-end justify-start w-auto md:w-full">
+      <Button
+        onClick={handleSelectCityClick}
+        className="border border-blue_gray-400 border-solid cursor-pointer flex items-center justify-center min-w-[138px] rounded"
+        rightIcon={
+          <div className="h-6 mb-px ml-1.5 pl-[7px] pr-1.5 w-6 bg-white-A700 py-[9px]">
+            <Img
+              className="rounded-[1px]"
+              src="images/img_arrowdown.svg"
+              alt="arrow_down"
+            />
           </div>
+        }
+        color="white_A700"
+        size="sm"
+        variant="fill"
+      >
+        <div className="!text-gray-900 font-medium leading-[normal] text-base text-center">
+          Select City
+        </div>
+      </Button>
+
+      <div
+        id="cityDropdown"
+        className="absolute mt-14 w-[138px] bg-white-A700 rounded shadow-md hidden"
+      >
+        {hardcodedCities.map((city, index) => (
+          <div
+            key={index}
+            className="px-4 py-2 cursor-pointer hover:bg-gray-200"
+            onClick={() => {
+              setSelectedCity(city);
+              handleSelectCityClick();
+            }}
+          >
+            {city}
+          </div>
+        ))}
+      </div>
+
+      <div className="flex flex-col gap-2 items-start justify-end w-auto md:w-full">
+        <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
+          {/* Map hardcoded hospitals based on cardsToShow */}
+          {hardcodedHospitals.slice(0, cardsToShow).map((hospitalName, index) => (
+            <DesignHomepageHospitalcard
+              key={index}
+              hospitalName={hospitalName.name}
+              city={selectedCity.city}
+              userimage={hospitalName.logo}
+              className="bg-white-A700 flex flex-col gap-2.5 items-start justify-start px-5 py-6 rounded-lg shadow-bs2 w-full"
+            />
+          ))}
         </div>
       </div>
+    </div>
 
       <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-3 w-auto">
         <a
@@ -385,24 +453,24 @@ const DesignHomepagePage = () => {
               <DesignHomepageColumnOne
                 className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
                 offerdescription="When Ammu got detected with cancer, MediYatri took care of our entire journey, from Chittagong to Chennai"
-                likescounter="750 Likes"
-                viewscounter="1290 Views"
+                // likescounter="750 Likes"
+                // viewscounter="1290 Views"
                 username="Yasmin Farhan"
                 imageSrc="images/img_image71.png"
               />
               <DesignHomepageColumnOne
                 className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
                 offerdescription="My 5-Year-old son Rubel was diagnosed with a major heart issue, MediYatri stood beside me as a strong friend in India. Thank you MediYatri!"
-                likescounter="750 Likes"
-                viewscounter="1290 Views"
+                // likescounter="750 Likes"
+                // viewscounter="1290 Views"
                 username="Imran"
                 imageSrc="images/img_image72.png"
               />
               <DesignHomepageColumnOne
                 className="flex flex-1 flex-col gap-5 items-start justify-start rounded-lg shadow-bs5 w-full"
                 offerdescription="I was suffering from chronic urology issues from last 5 years. MediYatri helped me to book an online consultation with a top urologist from India. Never thought I can address my issues so easily at home in Bangladesh."
-                likescounter="750 Likes"
-                viewscounter="1290 Views"
+                // likescounter="750 Likes"
+                // viewscounter="1290 Views"
                 username="Mohammed Nurul"
                 imageSrc="images/img_image73.png"
               />
@@ -451,7 +519,7 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    +91 97319 50075
+                    +91 97319 50075 (IN), +880 1905-422204 (BD)
                   </Text>
                 </div>
                 <div className="flex flex-row gap-[17px] items-center justify-start w-auto">

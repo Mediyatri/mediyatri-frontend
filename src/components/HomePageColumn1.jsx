@@ -81,8 +81,8 @@ const DesignHomepageColumnOne = (props) => {
 DesignHomepageColumnOne.defaultProps = {
   offerdescription:
     "When Ammu got detected with cancer, MediYatri took care of our entire journey, from Chittagong to Chennai",
-  likescounter: "750 Likes",
-  viewscounter: "1290 Views",
+  // likescounter: "750 Likes",
+  // viewscounter: "1290 Views",
   username: "Yasmin Farhan",
   imageSrc: "images/img_image66.png",
 };
