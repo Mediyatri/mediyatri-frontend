@@ -225,7 +225,7 @@ const Header = (props) => {
             )}
           </div>
           {/* Default Login Button */}
-          <Button
+          {/* <Button
             className="cursor-pointer font-bold font-poppins min-w-[85px] text-base text-center"
             shape="round"
             color="light_blue_900"
@@ -233,7 +233,7 @@ const Header = (props) => {
             variant="fill"
           >
             Login
-          </Button>
+          </Button> */}
         </div>
       </header>
     );

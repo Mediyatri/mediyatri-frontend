@@ -3,6 +3,9 @@ import React from "react";
 import { Img, Text } from "components";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+
 const DesignHomepageFooterwhite = (props) => {
   return (
     <>
@@ -19,14 +22,14 @@ const DesignHomepageFooterwhite = (props) => {
                 </Text>
                 <div className="flex flex-col items-start justify-start w-auto">
                   <div className="flex flex-col items-start justify-start w-auto">
-                    <div className="flex flex-col items-center justify-start py-2 w-auto">
+                    {/* <div className="flex flex-col items-center justify-start py-2 w-auto">
                       <Link to="/"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text1}
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
@@ -189,16 +192,17 @@ const DesignHomepageFooterwhite = (props) => {
                 </Text>
                 <div className="flex flex-col items-start justify-start w-auto">
                   <div className="flex flex-col items-start justify-start w-auto">
-                    <div className="flex flex-col items-center justify-start py-2 w-auto">
+                    <div className="flex flex-row items-center justify-start py-2 w-auto">
+                      <FontAwesomeIcon icon={faFacebookF} />
                       <Text
-                        className="text-gray-900 text-sm w-auto"
+                        className="text-gray-900 text-sm w-auto ml-2"
                         size="txtPoppinsRegular14Gray900"
                       >
                         {props?.text18}
                       </Text>
                     </div>
                   </div>
-                  <div className="flex flex-col items-start justify-start w-auto">
+                  {/* <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
                       <Text
                         className="text-gray-900 text-sm w-auto"
@@ -227,8 +231,8 @@ const DesignHomepageFooterwhite = (props) => {
                         {props?.text21}
                       </Text>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                </div> 
               </div>
             </div>
             <div className="flex flex-col gap-4 items-center justify-center py-6 w-auto sm:w-full">
