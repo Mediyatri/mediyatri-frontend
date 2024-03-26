@@ -156,7 +156,7 @@ const DesignHomepageHomepagesignup = (props) => {
           </div>
           </div>   
         </div>
-          <div className="flex flex-col gap-5 items-center justify-start w-full">
+          {/* <div className="flex flex-col gap-5 items-center justify-start w-full">
           <Button
               className="!text-white-A700 cursor-pointer font-poppins text-base text-center w-full"
               shape="round"
@@ -167,17 +167,17 @@ const DesignHomepageHomepagesignup = (props) => {
             >
               {props?.getotp}
             </Button>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-1 items-start justify-start w-full">
-            <div className="flex flex-col items-start justify-start w-full">
+            {/* <div className="flex flex-col items-start justify-start w-full">
               <Text
                 className="text-gray-900 text-xs tracking-[0.30px] w-auto"
                 size="txtPoppinsRegular12"
               >
                 {props?.otp}
               </Text>
-            </div>
-            <div className="bg-gray-100 border border-gray-300 border-solid flex flex-col h-[52px] md:h-auto items-start justify-center py-1 rounded w-full">
+            </div> */}
+            {/* <div className="bg-gray-100 border border-gray-300 border-solid flex flex-col h-[52px] md:h-auto items-start justify-center py-1 rounded w-full">
               <div className="flex flex-col items-start justify-start pl-4 pr-2 w-full">
                 <Input
                   name="placeholdervalu"
@@ -186,7 +186,7 @@ const DesignHomepageHomepagesignup = (props) => {
                   wrapClassName="w-[30%]"
                 ></Input>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col gap-5 items-center justify-start w-full">

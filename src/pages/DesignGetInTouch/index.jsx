@@ -13,8 +13,8 @@ const DesignGetInTouchPage = () => {
           <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
             <div className="flex md:flex-1 flex-col items-center justify-start md:px-5 w-[51%] md:w-full">
               <Img
-                className="h-[944px] md:h-auto object-cover w-full"
-                src="images/img_image81.png"
+                className="h-[900px] md:h-auto object-cover w-full"
+                src="images/img_getintouch.jpg"
                 alt="imageSixtyFour"
               />
             </div>

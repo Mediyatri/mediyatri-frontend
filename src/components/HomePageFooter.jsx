@@ -194,12 +194,14 @@ const DesignHomepageFooterwhite = (props) => {
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-row items-center justify-start py-2 w-auto">
                       <FontAwesomeIcon icon={faFacebookF} />
-                      <Text
-                        className="text-gray-900 text-sm w-auto ml-2"
-                        size="txtPoppinsRegular14Gray900"
-                      >
-                        {props?.text18}
-                      </Text>
+                      <a href="https://www.facebook.com/profile.php?id=61555385495357">
+                        <Text
+                          className="text-gray-900 text-sm w-auto ml-2"
+                          size="txtPoppinsRegular14Gray900"
+                        >
+                          {props?.text18}
+                        </Text>
+                      </a>
                     </div>
                   </div>
                   {/* <div className="flex flex-col items-start justify-start w-auto">
