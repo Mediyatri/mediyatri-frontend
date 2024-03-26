@@ -59,7 +59,7 @@ const DesignHomepagePage = () => {
   { name: "Apollo", city: "City A", logo: "images/img_apollo.png" },
   { name: "Fortis", city: "City B", logo: "images/img_fortis.gif" },
   { name: "Rainbow", city: "City C", logo: "images/img_rainbow.webp" },
-  { name: "Manipal", city: "City C", logo: "images/img_manipal.jpg" },
+  { name: "Manipal", city: "City C", logo: "images/img_manipal.jpeg" },
   { name: "Sakra", city: "City C", logo: "images/img_sakra.jpg" },
   // Add more hospitals with their logos
 ];
@@ -243,7 +243,10 @@ const DesignHomepagePage = () => {
       </div> */}
 
           <div className="flex flex-col gap-4 items-end justify-start w-auto md:w-full">
-      <Button
+
+      {/* Select City Dropdown button */}
+
+      {/* <Button
         onClick={handleSelectCityClick}
         className="border border-blue_gray-400 border-solid cursor-pointer flex items-center justify-center min-w-[138px] rounded"
         rightIcon={
@@ -280,7 +283,7 @@ const DesignHomepagePage = () => {
             {city}
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className="flex flex-col gap-2 items-start justify-end w-auto md:w-full">
         <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
@@ -298,7 +301,8 @@ const DesignHomepagePage = () => {
       </div>
     </div>
 
-      <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-3 w-auto">
+    {/* See More button */}
+      {/* <div className="flex flex-col items-start justify-start sm:px-5 px-6 py-3 w-auto">
         <a
           href="/"
           className="text-light_blue-A700 text-right text-sm tracking-[0.30px] w-auto"
@@ -306,7 +310,7 @@ const DesignHomepagePage = () => {
         >
           <Text size="txtPoppinsRegular14">{showMore ? 'See Less' : 'See More'}</Text>
         </a>
-      </div>
+      </div> */}
     </div>
           </div>
           <div className="flex flex-col gap-10 items-center justify-start max-w-[1240px] mx-auto py-8 w-full">
@@ -519,7 +523,9 @@ const DesignHomepagePage = () => {
                     className="text-base text-white-A700 w-auto"
                     size="txtPoppinsMedium16"
                   >
-                    +91 97319 50075 (IN), +880 1905-422204 (BD)
+                    +91 97319 50075 (IN)
+                    <br></br> 
+                    +880 1905-422204 (Heal & Care - Bangladesh Partner)
                   </Text>
                 </div>
                 <div className="flex flex-row gap-[17px] items-center justify-start w-auto">

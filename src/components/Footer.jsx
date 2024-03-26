@@ -3,6 +3,9 @@ import React from "react";
 import { Img, Text } from "components";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+
 const Footer = (props) => {
   return (
     <>
@@ -19,14 +22,14 @@ const Footer = (props) => {
                 </Text>
                 <div className="flex flex-col items-start justify-start w-auto">
                   <div className="flex flex-col items-start justify-start w-auto">
-                    <div className="flex flex-col items-center justify-start py-2 w-auto">
+                    {/* <div className="flex flex-col items-center justify-start py-2 w-auto">
                       <Link to="/"
                         className="text-gray-900 text-sm w-auto"
                         size="txtPoppinsRegular14Gray900"
                       >
                         About
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
@@ -189,16 +192,19 @@ const Footer = (props) => {
                 </Text>
                 <div className="flex flex-col items-start justify-start w-auto">
                   <div className="flex flex-col items-start justify-start w-auto">
-                    <div className="flex flex-col items-center justify-start py-2 w-auto">
-                      <Text
-                        className="text-gray-900 text-sm w-auto"
-                        size="txtPoppinsRegular14Gray900"
-                      >
-                        Facebook
-                      </Text>
+                    <div className="flex flex-row items-center justify-start py-2 w-auto">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                      <a href="https://www.facebook.com/profile.php?id=61555385495357">
+                        <Text
+                          className="text-gray-900 text-sm w-auto ml-2"
+                          size="txtPoppinsRegular14Gray900"
+                        >
+                          Facebook
+                        </Text>
+                      </a>
                     </div>
                   </div>
-                  <div className="flex flex-col items-start justify-start w-auto">
+                  {/* <div className="flex flex-col items-start justify-start w-auto">
                     <div className="flex flex-col items-center justify-start py-2 w-auto">
                       <Text
                         className="text-gray-900 text-sm w-auto"
@@ -227,7 +233,7 @@ const Footer = (props) => {
                         Youtube
                       </Text>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
