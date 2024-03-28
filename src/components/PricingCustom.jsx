@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Button, Img, Text } from "components";
+import { Button, Img, Text} from "components";
+import { Link } from "react-router-dom";
 
 const DesignHomepagePricingcustom = (props) => {
   return (
@@ -47,15 +48,17 @@ const DesignHomepagePricingcustom = (props) => {
             {props?.makepackagetext}
           </Text>
         </div>
-        <Button
-          className="cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
-          shape="round"
-          color="gray_900"
-          size="sm"
-          variant="fill"
-        >
-          {props?.getintouchbutton}
-        </Button>
+        <Link to="/getintouch">
+          <Button
+            className="cursor-pointer font-bold font-poppins min-w-[142px] text-base text-center"
+            shape="round"
+            color="gray_900"
+            size="sm"
+            variant="fill"
+          >
+            {props?.getintouchbutton}
+          </Button>
+        </Link>
       </div>
     </>
   );

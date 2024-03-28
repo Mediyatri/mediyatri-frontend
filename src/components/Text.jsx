@@ -49,6 +49,11 @@ const sizeClasses = {
   txtPoppinsMedium16Gray700: "font-medium font-poppins",
   txtPoppinsRegular14Gray90002: "font-normal font-poppins",
   txtPoppinsExtraBold28: "font-extrabold font-poppins",
+  xs: "text-xs font-medium",
+  lg: "text-lg font-normal",
+  s: "text-sm font-normal",
+  xl: "text-xl font-medium",
+  md: "text-base font-medium",
 };
 
 const Text = ({ children, className = "", size, as, ...restProps }) => {

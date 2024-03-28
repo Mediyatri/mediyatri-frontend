@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import { Button, Img, Input, Line, List, RatingBar, Text } from "components";
+
+import { Button2 } from "components/new-design-button";
+
+import { Button, Img, Input, Line, List, RatingBar, Text } from "../../components";
 import DesignHomepageColumnFour from "components/HomePageColumn4";
 import DesignHomepageColumnOne from "components/HomePageColumn1";
 import DesignHomepageFooterwhite from "components/HomePageFooter";
@@ -12,11 +15,13 @@ import DesignHomepagePricingcustom from "components/PricingCustom";
 import DesignHomepagePricinggold from "components/PricingPlatinum";
 import DesignHomepagePricingsilver from "components/PricingGold";
 import Header from "components/Header";
+import Heading from "components/Heading";
 
 import axios from 'axios';
 
 const backendUrl = 'https://mediyatri-dev-server-backend.eba-f2vbxjnd.ap-south-1.elasticbeanstalk.com';
 
+// new-design imports
 
 const DesignHomepagePage = () => {
   const designHomepageOnboardedcardPropList = [
@@ -104,7 +109,7 @@ const DesignHomepagePage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
+      {/* <div className="bg-white-A700 flex flex-col font-poppins items-center justify-start mx-auto w-full">
         <Header className="bg-white-A700 flex md:flex-col md:gap-10 h-20 md:h-auto items-center justify-between md:px-5 px-[100px] py-2 w-full" />
         <div className="flex flex-col gap-10 items-start justify-start md:px-10 sm:px-5 px-[100px] w-auto md:w-full">
           <div className="md:h-[1561px] h-[820px] relative w-full">
@@ -167,7 +172,120 @@ const DesignHomepagePage = () => {
               </div>
             </div>
             <DesignHomepageColumnFour className="fixed bottom-[5%] flex flex-col gap-4 h-[265px] md:h-auto items-end justify-end right-[0] w-[249px]" />
+          </div> */}
+      <div className="w-full md:pb-5 bg-white-A700">
+        <header className="p-3.5 bg-white-A700">
+          <div className="flex md:flex-col justify-between items-center w-full gap-5 mx-auto max-w-[1240px]">
+            <div className="flex sm:flex-col justify-between items-center w-[67%] md:w-full gap-5">
+              <div className="flex justify-center w-[27%] sm:w-full p-2.5">
+                <Img
+                  src="images/img_group11.png"
+                  alt="mediyatri2one"
+                  className="md:h-auto h-full object-cover w-full"
+                />
+              </div>
+              <div className="flex items-center">
+                <Link to="/services" className="flex mt-2 ml-[37px]">
+                  <Text size="md" as="p" className="text-center font-bold">
+                    Services
+                  </Text>
+                </Link>
+                <Link to="/pricing" className="flex ml-[31px] p-[5px]">
+                  <Text size="md" as="p" className="mt-2 text-center font-bold">
+                    Pricing
+                  </Text>
+                </Link>
+                <Link to="/getintouch" className="flex ml-6 p-[5px]">
+                  <Text size="md" as="p" className="mt-2 text-center font-bold">
+                    Get in Touch
+                  </Text>
+                </Link>
+              </div>
+            </div>
+            {/* <Button
+              color="gray_900"
+              size="lg"
+              shape="square"
+              className="sm:px-5 tracking-[0.50px] font-bold min-w-[95px]"
+            >
+              Login
+            </Button> */}
           </div>
+        </header>
+        <div className="w-full mx-auto md:p-5 max-w-[1240px]">
+          <div className="flex flex-col gap-10">
+            <div className="flex md:flex-col justify-center items-center gap-5 py-[89px] md:py-5">
+              <div className="flex flex-col items-start w-full gap-10">
+                <div className="flex flex-col self-stretch items-start gap-[17px]">
+                  <Text size="xl" as="p" className="!text-blue-A700">
+                    WELCOME TO MEDIYATRI
+                  </Text>
+                  <div className="flex flex-col self-stretch gap-5">
+                    <Heading size="lg" as="h1" className="!text-black-900 leading-[60px]">
+                      <span className="text-black-900">
+                        <>
+                          Your Gateway to <br />
+                        </>
+                      </span>
+                      <span className="text-blue-A700">Seamless</span>
+                      <span className="text-black-900">&nbsp;</span>
+                      <span className="text-blue-A700">Healthcare Experiences</span>
+                    </Heading>
+                    <Text size="xl" as="p" className="!text-black-900 !font-normal leading-[34px]">
+                      Connect with leading hospitals effortlessly. We handle travel, accommodations, and visa
+                      arrangements. Experience healthcare without borders – where seamless coordination ensures your
+                      focus remains solely on your well-being.
+                    </Text>
+                    <div className="flex flex-col items-start gap-3">
+                      <Text size="lg" as="p" className="!text-black-900">
+                        What we offer to our customers:
+                      </Text>
+                      <div className="flex flex-col self-stretch gap-2">
+                        <div className="flex items-start gap-4">
+                          <div className="h-[8px] w-[8px] mt-[7px] bg-blue-A700 rounded" />
+                          <Text size="lg" as="p" className="!text-black-900">
+                            Connecting People with Hospitals
+                          </Text>
+                        </div>
+                        <div className="flex items-start gap-4">
+                          <div className="h-[8px] w-[8px] mt-[7px] bg-blue-A700 rounded" />
+                          <Text size="lg" as="p" className="!text-black-900">
+                            Arranging Travel & Visa Assistance
+                          </Text>
+                        </div>
+                        <div className="flex sm:flex-col items-start gap-4">
+                          <div className="h-[8px] w-[8px] mt-[7px] bg-blue-A700 rounded" />
+                          <Text size="lg" as="p" className="!text-black-900">
+                            Accommodation & Overall Healthcare Experience
+                          </Text>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <Link to="/getintouch">
+                  <Button2
+                    color="gray_900"
+                    size="lg"
+                    shape="square"
+                    className="sm:px-5 tracking-[0.50px] font-bold min-w-[214px]"
+                  >
+                    Make Appointment
+                  </Button2>
+                </Link>
+              </div>
+              <div className="w-full">
+                <Img
+                  src="images/img_layer_0_1.png"
+                  alt="layer0one_one"
+                  className="w-full md:h-auto my-[120px] object-cover"
+                />
+              </div>
+                          <DesignHomepageColumnFour className="fixed bottom-[5%] flex flex-col gap-4 h-[265px] md:h-auto items-end justify-end right-[0] w-[249px]" />
+
+            </div>
+          </div>
+
 
     <div className="flex flex-col gap-10 items-center justify-start max-w-[1240px] mx-auto py-8 w-full">
       <div className="flex flex-col gap-2 items-center justify-center w-full">

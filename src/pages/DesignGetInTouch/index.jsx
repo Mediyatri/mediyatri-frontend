@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { Button, Img, Input, List, Text } from "components";
 import DesignHomepageFooterwhite from "components/HomePageFooter";
 import Header from "components/Header";
 
+import emailjs from '@emailjs/browser';
+import { send } from "emailjs-com";
+
 const DesignGetInTouchPage = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_fjpfgdk','template_nbimfzs', form.current, {
+        publicKey: '0PvSsUGREvvHOLVQm',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins gap-10 items-center justify-start mx-auto w-full">
@@ -20,7 +42,7 @@ const DesignGetInTouchPage = () => {
             </div>
             <div className="flex flex-1 flex-col items-center justify-start md:px-5 px-[120px] py-20 w-full">
               <div className="flex flex-col gap-6 items-start justify-start w-full">
-                <div className="flex flex-col items-start justify-start w-full">
+                <form ref={form} onSubmit={sendEmail} className="flex flex-col items-start justify-start w-full">
                   <div className="flex flex-col gap-5 items-center justify-start w-full">
                     <div className="flex flex-col gap-2.5 items-center justify-start w-full">
                       <Text
@@ -48,7 +70,7 @@ const DesignGetInTouchPage = () => {
                           </Text>
                         </div>
                         <Input
-                          name="logininput"
+                          name="from_name"
                           placeholder="Enter your Name"
                           className="md:h-auto p-0 placeholder:text-gray-600 sm:h-auto text-left text-sm w-full"
                           wrapClassName="border border-gray-300 border-solid w-full"
@@ -59,7 +81,7 @@ const DesignGetInTouchPage = () => {
                           variant="fill"
                         ></Input>
                       </div>
-                      <div className="flex flex-col gap-1 h-[74px] md:h-auto items-start justify-start w-full">
+                      {/* <div className="flex flex-col gap-1 h-[74px] md:h-auto items-start justify-start w-full">
                         <div className="flex flex-col items-start justify-start w-full">
                           <Text
                             className="text-gray-900 text-xs tracking-[0.30px] w-auto"
@@ -80,7 +102,7 @@ const DesignGetInTouchPage = () => {
                             ></Input>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="flex flex-col gap-1 items-start justify-start w-full">
                         <div className="flex flex-col items-start justify-start w-full">
                           <Text
@@ -91,7 +113,7 @@ const DesignGetInTouchPage = () => {
                           </Text>
                         </div>
                         <Input
-                          name="logininput_One"
+                          name="from_email"
                           placeholder="Enter your E-mail ID"
                           className="md:h-auto p-0 placeholder:text-gray-600 sm:h-auto text-left text-sm w-full"
                           wrapClassName="border border-gray-300 border-solid w-full"
@@ -114,20 +136,30 @@ const DesignGetInTouchPage = () => {
                         <div className="bg-gray-100 border border-gray-300 border-solid flex flex-col h-[278px] md:h-auto items-start justify-start py-2.5 rounded w-full">
                           <div className="flex flex-col items-start justify-start pl-4 pr-2 w-full">
                             <div className="flex flex-col items-start justify-center w-auto">
-                              <Text
+                              <Input
+                                name="message"
                                 className="text-gray-600 text-sm w-auto"
                                 size="txtPoppinsRegular14Gray600"
                               >
                                 Write your Message
-                              </Text>
+                              </Input>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <Button
+                  <Button 
+                    className="cursor-pointer font-bold min-w-[159px] text-base text-center" 
+                    shape="round"
+                    color="light_blue_900"
+                    size="sm"
+                    variant="fill"
+                  >
+                    <input type="submit" value="Send Message" />
+                  </Button>
+                </form>
+                {/* <Button
                   className="cursor-pointer font-bold min-w-[159px] text-base text-center"
                   shape="round"
                   color="light_blue_900"
@@ -135,10 +167,21 @@ const DesignGetInTouchPage = () => {
                   variant="fill"
                 >
                   Send Message
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
+
+              {/* <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="from_name" />
+                <label>Email</label>
+                <input type="email" name="from_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+              </form> */}
+
           <DesignHomepageFooterwhite className="flex flex-col items-start justify-start w-full md:w-full" />
         </div>
       </div>
@@ -147,3 +190,4 @@ const DesignGetInTouchPage = () => {
 };
 
 export default DesignGetInTouchPage;
+
