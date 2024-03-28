@@ -16,10 +16,10 @@ const DesignServicesPage = () => {
       userimage: "images/img_image70.png",
       doctorsonboardedtext: "hospitals tied up",
     },
-    { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+" },
+    { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+", userimage: "images/out-1.png"},
     {
       doctorsonboardedcount: "3",
-      userimage: "images/img_image70.png",
+      userimage: "images/img_country.jpeg",
       doctorsonboardedtext: "countries",
     },
   ];
