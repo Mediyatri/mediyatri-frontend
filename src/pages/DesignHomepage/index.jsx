@@ -281,9 +281,8 @@ const DesignHomepagePage = () => {
                   className="w-full md:h-auto my-[120px] object-cover"
                 />
               </div>
-                          <DesignHomepageColumnFour className="fixed bottom-[5%] flex flex-col gap-4 h-[265px] md:h-auto items-end justify-end right-[0] w-[249px]" />
-
             </div>
+            <DesignHomepageColumnFour className="fixed bottom-[5%] flex flex-col gap-4 h-[265px] md:h-auto items-end justify-end right-[0] w-[249px]" />
           </div>
 
 
