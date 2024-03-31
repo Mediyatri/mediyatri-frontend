@@ -10,22 +10,40 @@ import { send } from "emailjs-com";
 const DesignGetInTouchPage = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm('service_fjpfgdk','template_nbimfzs', form.current, {
-        publicKey: '0PvSsUGREvvHOLVQm',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+  //   emailjs
+  //     .sendForm('service_fjpfgdk','template_nbimfzs', form.current, {
+  //       publicKey: '0PvSsUGREvvHOLVQm',
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log('SUCCESS!');
+  //       },
+  //       (error) => {
+  //         console.log('FAILED...', error.text);
+  //       },
+  //     );
+  // };
+  const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm('service_fjpfgdk', 'template_nbimfzs', form.current, {
+      publicKey: '0PvSsUGREvvHOLVQm',
+    })
+    .then(
+      () => {
+        alert('Email sent successfully!');
+      },
+      (error) => {
+        alert('Failed to send email. Please try again later.');
+        console.error('FAILED...', error.text);
+      }
+    );
+};
+
 
   return (
     <>
@@ -156,7 +174,7 @@ const DesignGetInTouchPage = () => {
                     size="sm"
                     variant="fill"
                   >
-                    <input type="submit" value="Send Message" />
+                    <input type="submit" style={{cursor: 'pointer'}} value="Send Message" />
                   </Button>
                 </form>
                 {/* <Button
