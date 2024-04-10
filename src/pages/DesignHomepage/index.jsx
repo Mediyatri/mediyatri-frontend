@@ -217,7 +217,7 @@ const DesignHomepagePage = () => {
             <div className="flex md:flex-col justify-center items-center gap-5 py-[89px] md:py-5">
               <div className="flex flex-col items-start w-full gap-10">
                 <div className="flex flex-col self-stretch items-start gap-[17px]">
-                  <Text size="xl" as="p" className="!text-blue-A700">
+                  <Text size="xl" as="p" className="text-light_blue-900">
                     WELCOME TO MEDIYATRI
                   </Text>
                   <div className="flex flex-col self-stretch gap-5">
@@ -227,9 +227,9 @@ const DesignHomepagePage = () => {
                           Your Gateway to <br />
                         </>
                       </span>
-                      <span className="text-blue-A700">Seamless</span>
+                      <span className="text-light_blue-900">Seamless</span>
                       <span className="text-black-900">&nbsp;</span>
-                      <span className="text-blue-A700">Healthcare Experiences</span>
+                      <span className="text-light_blue-900">Healthcare Experiences</span>
                     </Heading>
                     <Text size="xl" as="p" className="!text-black-900 !font-normal leading-[34px]">
                       Connect with leading hospitals effortlessly. We handle travel, accommodations, and visa
