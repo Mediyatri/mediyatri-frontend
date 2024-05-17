@@ -61,11 +61,20 @@ const DesignHomepagePage = () => {
       const hardcodedCities = []; // Hardcoded cities
       // const hardcodedHospitals = ['Apollo', 'Fortis', 'Rainbow', 'Manipal', 'Sakra']; // Hardcoded hospitals
       const hardcodedHospitals = [
-  { name: "Apollo", city: "City A", logo: "images/img_apollo.png" },
+  { name: "Apollo", city: "City A", logo: "images/hospital_logo_apollo.png" },
   { name: "Fortis", city: "City B", logo: "images/img_fortis.gif" },
-  { name: "Rainbow", city: "City C", logo: "images/img_rainbow.webp" },
-  { name: "Manipal", city: "City C", logo: "images/img_manipal.jpeg" },
-  { name: "Sakra", city: "City C", logo: "images/img_sakra.jpg" },
+  { name: "Rainbow", city: "City C", logo: "images/hospital_logo_rainbow.jpg" },
+  { name: "Manipal", city: "City C", logo: "images/hospital_logo_manipal.png" },
+  { name: "Sakra", city: "City C", logo: "images/hospital_logo_sakra.jpg" },
+  { name: "Gleneagles", city: "City C", logo: "images/hospital_logo_gleneagles.png" },
+  { name: "KIMS", city: "City A", logo: "images/hospital_logo_kims.jpg" },
+  { name: "Kauveri", city: "City B", logo: "images/hospital_logo_kauveri.jpg" },
+  { name: "Yashoda", city: "City C", logo: "images/hospital_logo_yashoda.png" },
+  { name: "RELA", city: "City C", logo: "images/hospital_logo_rela.jpg" },
+  { name: "Nethradhama", city: "City C", logo: "images/hospital_logo_nethradhama.jpg" },
+  { name: "MAX Healthcare", city: "City C", logo: "images/hospital_logo_max_healthcare.jpg" },
+  { name: "SIMS", city: "City C", logo: "images/hospital_logo_sims.png" },
+  { name: "Naruvi", city: "City C", logo: "images/hospital_logo_naruvi.png" },
   // Add more hospitals with their logos
 ];
 
@@ -276,7 +285,7 @@ const DesignHomepagePage = () => {
               </div>
               <div className="w-full">
                 <Img
-                  src="images/img_layer_0_1.png"
+                  src="images/home_page_01.svg"
                   alt="layer0one_one"
                   className="w-full md:h-auto my-[120px] object-cover"
                 />
@@ -403,15 +412,15 @@ const DesignHomepagePage = () => {
       </div> */}
 
       <div className="flex flex-col gap-2 items-start justify-end w-auto md:w-full">
-        <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 items-start justify-start w-auto md:w-full">
+        <div className="gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-6 items-start justify-start w-auto md:w-full">
           {/* Map hardcoded hospitals based on cardsToShow */}
-          {hardcodedHospitals.slice(0, cardsToShow).map((hospitalName, index) => (
+          {hardcodedHospitals.slice(0, hardcodedHospitals.length).map((hospitalName, index) => (
             <DesignHomepageHospitalcard
               key={index}
               hospitalName={hospitalName.name}
               city={selectedCity.city}
               userimage={hospitalName.logo}
-              className="bg-white-A700 flex flex-col gap-2.5 items-start justify-start px-5 py-6 rounded-lg shadow-bs2 w-full"
+              className="bg-white-A700 flex flex-col gap-2.5 items-start justify-start px-1 py-1 rounded-lg shadow-bs2 w-full h-38"
             />
           ))}
         </div>

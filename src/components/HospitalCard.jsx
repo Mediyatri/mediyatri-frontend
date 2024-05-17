@@ -128,29 +128,29 @@ const DesignHomepageHospitalcard = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="flex flex-col gap-2.5 items-start justify-start w-full">
-          <div className="flex flex-col items-start justify-start p-2 w-auto">
+        {/* <div className="flex flex-col gap-2.5 items-start justify-start w-full"> */}
+          <div className="flex flex-col items-start justify-start p-1 w-auto">
             <Img
-              className="h-[81px] md:h-auto object-cover w-[121px] sm:w-full"
+              className="h-[130px] md:h-auto object-cover w-[121px] sm:w-full"
               alt="Hospital Image"
               src={props?.userimage}
             />
           </div>
-          <div className="flex flex-col gap-1 items-start justify-start w-full">
+          <div className="flex flex-col gap-0 items-start justify-start w-full">
             <Text
-              className="text-base text-light_blue-900 w-full"
+              className="text-base text-light_blue-900 w-full text-center"
               size="txtPoppinsMedium16Lightblue900"
             >
               {props?.hospitalName}
             </Text>
-            <Text
+            {/* <Text
               className="text-sm text-gray-900 w-full"
               size="txtPoppinsRegular14Gray900"
             >
               {props?.city}
-            </Text>
+            </Text> */}
           </div>
-          <div className="flex flex-row gap-2.5 items-center justify-center py-2.5 rounded w-auto">
+          {/* <div className="flex flex-row gap-2.5 items-center justify-center py-2.5 rounded w-auto">
             <Text
               className="text-base text-gray-900 w-auto"
               size="txtPoppinsSemiBold16"
@@ -162,8 +162,8 @@ const DesignHomepageHospitalcard = (props) => {
               src="images/img_iconexplore.svg"
               alt="iconexplore"
             />
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </>
   );
