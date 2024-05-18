@@ -77,8 +77,8 @@ const DesignHomepagePage = () => {
   { name: "Naruvi", city: "City C", logo: "images/hospital_logo_naruvi.png" },
   { name: "AMRI", city: "City C", logo: "images/hospital_logo_amri.png" },
   { name: "Dr Agarwals", city: "City C", logo: "images/hospital_logo_dr_agarwals.jpg" },
-  { name: "SRMC", city: "City C", logo: "images/hospital_logo_srmc_1.png" },
-  { name: "AMRI", city: "City C", logo: "images/hospital_logo_mgm.jpeg" },
+  { name: "SRMC", city: "City C", logo: "images/hospital_logo_srmc.png" },
+  { name: "MGM", city: "City C", logo: "images/hospital_logo_mgm.jpeg" },
   // Add more hospitals with their logos
 ];
 
