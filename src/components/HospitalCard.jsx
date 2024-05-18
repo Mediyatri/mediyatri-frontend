@@ -129,9 +129,9 @@ const DesignHomepageHospitalcard = (props) => {
     <>
       <div className={props.className}>
         {/* <div className="flex flex-col gap-2.5 items-start justify-start w-full"> */}
-          <div className="flex flex-col items-start justify-start p-1 w-auto">
+          <div className="flex flex-col items-center justify-center p-1 w-full">
             <Img
-              className="h-[130px] md:h-auto object-cover w-[121px] sm:w-full"
+              className="h-[130px] w-[121px] object-cover "
               alt="Hospital Image"
               src={props?.userimage}
             />
