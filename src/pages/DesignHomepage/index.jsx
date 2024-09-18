@@ -34,7 +34,7 @@ const DesignHomepagePage = () => {
     { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+", userimage: "images/out-1.png" },
     {
       doctorsonboardedcount: "3",
-      userimage: "images/img_country.jpeg",
+      userimage: "images/img_country.jpg",
       doctorsonboardedtext: "countries",
     },
   ];
@@ -78,7 +78,7 @@ const DesignHomepagePage = () => {
   { name: "AMRI", city: "City C", logo: "images/hospital_logo_amri.png" },
   { name: "Dr Agarwals", city: "City C", logo: "images/hospital_logo_dr_agarwals.jpg" },
   { name: "SRMC", city: "City C", logo: "images/hospital_logo_srmc.png" },
-  { name: "MGM", city: "City C", logo: "images/hospital_logo_mgm.jpeg" },
+  { name: "MGM", city: "City C", logo: "images/hospital_logo_mgm.jpg" },
   // Add more hospitals with their logos
 ];
 
