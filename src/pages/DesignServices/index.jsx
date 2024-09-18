@@ -19,7 +19,7 @@ const DesignServicesPage = () => {
     { doctorsonboardedtext: "lives impacted", doctorsonboardedcount: "10K+", userimage: "images/out-1.png"},
     {
       doctorsonboardedcount: "3",
-      userimage: "images/img_country.jpeg",
+      userimage: "images/img_country.jpg",
       doctorsonboardedtext: "countries",
     },
   ];
